@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "super-tic-tac-toe"
+version = "0.0.1"
+description = "Multidimensional Tic Tac Toe."
+authors = ["Jonathon Hawkins"]
+readme = "README.md"
+packages = [{include = "poetry_demo"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+[tool.poetry.group.dev.dependencies]
+poethepoet = "^0.24.0"
+
+[tool.poe.tasks]
+test = "echo 🐙 Hello there 🐙"
+start = "python ./src/core/main.py"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
